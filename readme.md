@@ -2,21 +2,29 @@
 Go to [git download page](git-scm.com/downloads) and install it.
 Then open CMD or the terminal in your code editor.
 
-# Clone the repo
+# Clone your fork
 Run the command:
 ```bash
 git clone git@github.com:stolen-lighter/training.git
 ```
 
 # The commit
-After making changes run the commands:
-```bash
-# Adds all the changed files to git
-git add .
-# Creates a snapshot of your project with
-# a short message
-git commit -m "<your message>"
-
-# This "pushes" the code to the origin in the current branch
-git push
+## Step one Make my branch
 ```
+git checkout -b my-feature
+```
+## Step two add them to git
+```
+git add .
+```
+## Commit the changes
+```
+git commit -m "<Your message>"
+```
+## Push to your fork
+```
+git push -u origin my-feature
+```
+
+# Create the Pull Request
+Click Compare & Pull request
